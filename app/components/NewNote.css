@@ -1,22 +1,37 @@
+body{
+    color: #ca46ff;
+}
+
 #note-form {
-    width: 300px; /* adjust the width as needed */
+    width: 450px; /* adjust the width as needed */
     margin: 0 auto; /* this centers the form horizontally */
-    border: 2px solid #ccc; /* adds a border */
-    padding: 20px; /* adds some padding */
-    text-align: center; /* aligns text within the form */
+    padding: 30px; /* adds some padding */
+    text-align: center; 
+    background: #e7e7e7;
+    border-radius: 15px;
   }
   
   #note-form label {
-    display: block; /* displays labels in block format */
-    margin-bottom: 5px; /* adds some space below labels */
+    display: block;
+    margin-bottom: 5px; 
+    font-size: 18px;
+    font-weight: 600;
   }
-  
   #note-form input,
   #note-form textarea {
     width: 100%; /* makes input and textarea fill the width of the form */
     padding: 8px; /* adds padding to inputs */
     margin-bottom: 15px; /* adds some space below inputs */
-    box-sizing: border-box; /* includes padding and border in the element's total width and height */
+    background: #ca46ff;
+    box-sizing: border-box; 
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  #note-form input{
+    padding: 15px;
   }
   
   #note-form .form-actions {
@@ -24,16 +39,16 @@
   }
   
   #note-form button {
-    background-color: #007bff; /* sets background color for button */
+    background-color: #ca46ff; /* sets background color for button */
     color: white; /* sets text color */
-    padding: 10px 20px; /* adds padding to the button */
+    padding: 13px 25px; /* adds padding to the button */
     border: none; /* removes border */
-    border-radius: 5px; /* adds border-radius */
+    border-radius: 15px; /* adds border-radius */
     cursor: pointer; /* changes cursor to pointer on hover */
-    font-size: 16px; /* sets font size */
+    font-size: 17px; /* sets font size */
   }
   
   #note-form button:hover {
-    background-color: #0056b3; /* changes background color on hover */
+    background-color: #a100e1; /* changes background color on hover */
   }
   
