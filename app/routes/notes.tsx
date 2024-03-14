@@ -10,6 +10,10 @@ export default function NotesPage(){
     )
 }
 
+export function action(){
+    
+}
+
 export const links: LinksFunction = () =>[
     ...newNoteCss()
 ]
