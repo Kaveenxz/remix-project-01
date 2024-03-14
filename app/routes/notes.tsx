@@ -1,5 +1,6 @@
 import { LinksFunction, redirect } from "@remix-run/node";
 import NewNote, {links as newNoteCss} from "~/components/NewNote";
+import NoteList, {links as noteListCss}  from "~/components/NoteList";
 import {getStoedNotes, storeNotes } from '~/data/notes'
 
 export default function NotesPage(){
@@ -22,5 +23,5 @@ export async function action({request}:any){
 }
 
 export const links: LinksFunction = () =>[
-    ...newNoteCss()
+    ...newNoteCss(), ...noteListCss()
 ]

@@ -1,3 +1,6 @@
+import { LinksFunction } from '@remix-run/node'
+import noteListStyle from '~/components/NoteList.css'
+
 export default function NoteList({notes}:any){
     return(
         <ul id="note-list">
@@ -28,3 +31,7 @@ export default function NoteList({notes}:any){
         </ul>
     )
 }
+
+export const links : LinksFunction = () => [
+    {rel: 'stylesheet', href: noteListStyle}
+]
