@@ -9,10 +9,7 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-];
-
+import mainStyle from '~/styles/main.css'
 export default function App() {
   return (
     <html lang="en">
@@ -31,3 +28,7 @@ export default function App() {
     </html>
   );
 }
+
+export const links: LinksFunction = ()=>[
+  {rel:"stylesheet", href:mainStyle}
+]
