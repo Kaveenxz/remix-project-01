@@ -7,6 +7,6 @@ export async function getStoedNotes(){
     return storedNotes;
 }
 
-export function storedNotes(notes){
+export function storeNotes(notes){
     return fs.writeFile('note.json', JSON.stringify({notes: notes || [] }))
 }
