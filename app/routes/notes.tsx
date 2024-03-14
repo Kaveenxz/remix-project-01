@@ -1,7 +1,15 @@
+import { LinksFunction } from "@remix-run/node";
+import NewNote, {links as newNoteCss} from "~/components/NewNote";
+
+
 export default function NotesPage(){
     return(
         <div>
-            <h1>Notes works</h1>
+            <NewNote/>
         </div>
     )
 }
+
+export const links: LinksFunction = () =>[
+    ...newNoteCss()
+]
