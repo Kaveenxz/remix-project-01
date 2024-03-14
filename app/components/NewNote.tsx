@@ -3,7 +3,8 @@ import newNoteCss from './NewNote.css'
 
 export default function NewNote(){
     return(
-        <form action="" method="post" id="note-form">
+        <div className="form">
+            <form action="" method="post" id="note-form" className='note-form'>
             <p>
                 <label htmlFor="title">Title</label>
                 <input type="text" id="title" name="title" required/>
@@ -16,6 +17,7 @@ export default function NewNote(){
                 <button>Add Note</button>
             </div>
         </form>
+        </div>
     )
 }
 

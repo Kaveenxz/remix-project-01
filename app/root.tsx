@@ -1,5 +1,6 @@
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
+import MainNavigation from "./components/MainNavigation";
 import {
   Links,
   LiveReload,
@@ -20,6 +21,9 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <header>
+          <MainNavigation></MainNavigation>
+        </header>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

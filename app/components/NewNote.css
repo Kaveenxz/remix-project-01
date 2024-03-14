@@ -1,7 +1,13 @@
+*{
+    text-align: center;
+}
+
 body{
     color: #ca46ff;
 }
-
+.form{
+    margin-top: 60px;
+}
 #note-form {
     width: 450px; /* adjust the width as needed */
     margin: 0 auto; /* this centers the form horizontally */

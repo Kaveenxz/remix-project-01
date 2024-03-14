@@ -11,12 +11,15 @@
     font-size: 20px;
 }
 #cta a{
-    color:#fff;
-    border: 2px solid #fff;
+    background-color: #4649ff; /* sets background color for button */
+    color: white; /* sets text color */
+    padding: 15px 50px; /* adds padding to the button */
+    border: none; /* removes border */
+    border-radius: 15px; /* adds border-radius */
+    cursor: pointer; /* changes cursor to pointer on hover */
+    font-size: 30px; /* sets font size */
     text-decoration: none;
-    padding: 10px 30px;
-    font-size: 15px;
-    font-weight: bold;
+    font-weight: 600;
 }
 #cta{
     margin-top: 50px;
