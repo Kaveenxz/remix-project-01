@@ -9,4 +9,4 @@ export async function getStoedNotes(){
 
 export function storeNotes(notes){
     return fs.writeFile('note.json', JSON.stringify({notes: notes || [] }))
-}
+} 

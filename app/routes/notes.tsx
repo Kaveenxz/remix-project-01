@@ -1,5 +1,5 @@
 import { LinksFunction, redirect } from "@remix-run/node";
-import { useLoaderData } from "@remix-run/react";
+import { Link, useLoaderData } from "@remix-run/react";
 import NewNote, {links as newNoteCss} from "~/components/NewNote";
 import NoteList, {links as noteListCss}  from "~/components/NoteList";
 import {getStoedNotes, storeNotes } from '~/data/notes'
@@ -36,3 +36,17 @@ export async function action({request}:any){
 export const links: LinksFunction = () =>[
     ...newNoteCss(), ...noteListCss()
 ]
+
+export function ErrorBoundary() {
+    return (
+        <main className="error-body">
+        <div className="error-container">
+            <div className="error-box">
+              <h1>An error has occurred</h1>
+              <p>Something went wrong in Notes</p>          
+              <p>Back to <Link to="/">safety</Link>!</p>
+            </div>
+          </div>
+        </main>
+    )
+}

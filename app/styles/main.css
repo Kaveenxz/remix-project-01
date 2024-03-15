@@ -28,3 +28,43 @@ body{
     padding-bottom: 5px;
     border-bottom: 3px solid #fff;
   }
+  .error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .error-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin-top: 20vh; 
+  padding: 20px;
+}
+
+  
+  .error-box {
+    background-color: #d9a356; 
+    border: none;
+    border-radius: 10px;
+    padding:60px 20px;
+    max-width: 600px; 
+    text-align: center;
+  }
+
+  .error-box h1,
+  .error-box p {
+    margin: 10px 0;
+    color: #ffffff;
+  }
+  .error-box p{
+    font-weight: 600;
+  }
+  .error-box h1{
+    color: #000;
+  }
+  .error-box a {
+    color: blue;
+  }
+  
