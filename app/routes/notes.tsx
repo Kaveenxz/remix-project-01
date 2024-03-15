@@ -1,14 +1,21 @@
 import { LinksFunction, redirect } from "@remix-run/node";
+import { useLoaderData } from "@remix-run/react";
 import NewNote, {links as newNoteCss} from "~/components/NewNote";
 import NoteList, {links as noteListCss}  from "~/components/NoteList";
 import {getStoedNotes, storeNotes } from '~/data/notes'
 
 export default function NotesPage(){
+    const notes = useLoaderData()
     return(
         <div>
             <NewNote/>
+            <NoteList notes={notes} />
         </div>
     )
+}
+export async function loader() {
+    const notes = await getStoedNotes();
+    return notes;
 }
 
 export async function action({request}:any){
