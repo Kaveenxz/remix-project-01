@@ -1,8 +1,10 @@
 import { LinksFunction } from '@remix-run/node'
 import newNoteCss from './NewNote.css'
-import { Form } from '@remix-run/react'
+import { Form, useNavigation } from '@remix-run/react'
 
 export default function NewNote(){
+    const navigation = useNavigation();
+    const isSubmiting = navigation.state === 'submitting'
     return(
         <div className="form">
             <Form action="" method="post" id="note-form" className='note-form'>
@@ -15,7 +17,7 @@ export default function NewNote(){
                 <textarea name="content" id="content" rows={5} required />
             </p>
             <div className="form-actions">
-                <button>Add Note</button>
+                <button disabled={isSubmiting}>{isSubmiting ? 'Adding...' : 'Add Note'}</button>
             </div>
         </Form>
         </div>
